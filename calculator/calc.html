@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript">
+	// function to add 2 numbers
+	function add(a, b){
+		var a = document.getElementById("num1").value;
+		var b = document.getElementById("num2").value;
+		var ans = +a + +b;
+		
+		document.getElementById('sol').value= ans;
+	}
+	// function to subtract 2 numbers
+	function sub(a, b){
+		var a = document.getElementById("num1").value;
+		var b = document.getElementById("num2").value;
+		var ans = a - b;
+		
+		document.getElementById('sol').value= ans;
+	}
+	// function to multiply 2 numbers
+	function mul(a, b){
+		var a = document.getElementById("num1").value;
+		var b = document.getElementById("num2").value;
+		var ans = a * b;
+		
+		document.getElementById('sol').value= ans;
+	}
+	// function to divide 2 numbers
+	function div(a, b){
+		var a = document.getElementById("num1").value;
+		var b = document.getElementById("num2").value;
+		var ans = a / b;
+		
+		document.getElementById('sol').value= ans;
+		
+	}
+	</script>
+</head>
+<body>
+	<div style="text-align:center">
+		<p style="font-weight:bold">Calculator</p>
+		<input type="text" id="num1" name="num1" />
+		<br><br>
+		<input type="text" id="num2" name="num2" />
+		<br><br><br>
+		
+		<input type="button" value="Add" onclick="add()" />
+		<input type="button" value="Sub" onclick="sub()" />
+		<input type="button" value="Mul" onclick="mul()" />
+		<input type="button" value="Div" onclick="div()" />
+		
+		<br>
+		<p style="font-weight:bold">Solution is: <input type="text" id="sol" name="sol" /></p>
+	</div>
+
+</body>
+</html>
